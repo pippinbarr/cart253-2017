@@ -1,0 +1,1 @@
+This directory contains model solutions for the exercises in the textbook _Learning Processing_ by Daniel Shiffman. They're separated into directories for each chapter and will become available the week after we talk about the concepts in class.
