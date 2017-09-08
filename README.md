@@ -1,4 +1,4 @@
-# Oh hi, this is the CART 253 GitHub repository for 2017
+# Welcome to the CART 253 GitHub repository for 2017
 
 # Course information  
 
