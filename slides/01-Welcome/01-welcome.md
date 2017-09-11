@@ -1342,7 +1342,16 @@ class: middle
 
 class: middle
 
-# Homework
+# On leaving
+
+- If you want to leave studio time like 10 minutes early at the end of class, that's fine
+- If you need to leave earlier than that for some reason, talk to Pippin - otherwise it'll be counted as an absence!
+
+---
+
+class: middle
+
+# Now / Homework
 
 - In Processing __go to `File > Examples` and play around with stuff__ (change numbers, go wild!)
 - __Do [Exercise 00](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-00)__. Note that it is __not graded__ and __not submitted__, but look at it anyway! (It introduces _comments_ for one thing.)
