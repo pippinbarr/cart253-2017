@@ -1,0 +1,64 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: monospace;
+}
+
+.remark-container {
+  background-color: grey;
+  box-shadow: none;
+}
+
+div.remark-slide-content {
+  background-color: white;
+}
+
+div.remark-slide-content.title {
+}
+
+.remark-slide-content h1,h2,h3 {
+  font-weight: bold;
+}
+
+.remark-slide-content h1 {
+  font-size: 40px;
+  border-bottom: solid 10px yellow;
+}
+
+.remark-slide-content h2 {
+  font-size: 35px;
+}
+
+.remark-slide-content h3 {
+  font-size: 30px;
+}
+
+.remark-slide-content li {
+  padding-bottom: 20px;
+}
+
+.remark-slide-content a, a:visited, a:hover {
+  color: black;
+}
+
+.remark-slide-content a:hover {
+  text-decoration: none;
+}
+
+.remark-slide-content {
+  font-size: 32px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.codeHighlight {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
