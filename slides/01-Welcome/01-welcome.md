@@ -232,7 +232,7 @@ background-size: contain;
 
 ???
 
-[My Little Piece of Privacy by Niklas Roy
+My Little Piece of Privacy by Niklas Roy  
 http://www.niklasroy.com/project/88/my-little-piece-of-privacy
 
 I also made my first ever game [GuruQuest](http://www.pippinbarr.com/2011/05/02/guruquest/) in Processing!
