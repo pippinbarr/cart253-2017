@@ -228,11 +228,12 @@ class: middle
 background-image: url(images/my-little-piece-of-privacy.png)
 background-size: contain;
 
-## .highlight[Feel the power...]
+## .highlight[[Feel the power...](http://www.niklasroy.com/project/88/my-little-piece-of-privacy)]
 
 ???
 
-[My Little Piece of Privacy](http://www.niklasroy.com/project/88/my-little-piece-of-privacy) by Niklas Roy
+[My Little Piece of Privacy by Niklas Roy
+http://www.niklasroy.com/project/88/my-little-piece-of-privacy
 
 I also made my first ever game [GuruQuest](http://www.pippinbarr.com/2011/05/02/guruquest/) in Processing!
 
