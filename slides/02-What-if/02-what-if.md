@@ -375,13 +375,14 @@ class: middle
 
 - Remember that there are _rules_ for naming variables
 - They _must_ start with a letter and continue only with letters, numbers, or the underscore character `_`
-- They _must_ be unique and cannot already be in use by Processing
+- They _must_ be unique and should not already be in use by Processing (e.g. not `mouseX`)
 - They _must_ be meaningful
 - They _should_ use "camel case" where you start with a lowercase letter and then use capital letters to indicate word breaks
 
 ???
 
 - Actually you can also start a variable name with a `_` or a `$` but let's not
+- Also note that you _can_ call a variable `mouseX` and it will break the Processing version
 
 ---
 
@@ -576,10 +577,11 @@ class: middle
 - In Processing it works like this:
 
 ```java
-float randomNumber = random();
+float randomNumber = random(n);
 ```
 
-- This will put a random `float` between 0 and 1 (not including 1) into our `randomNumber` variable
+- This will put a random `float` between 0 and `n` (not including `n`) into our `randomNumber` variable
+- `random(10)` gives us a random floating point number between `0` and `10`
 
 ---
 
@@ -590,9 +592,9 @@ class: middle
 - You can also specify a _range_ for your random number like this
 
 ```java
-float red = random(0,255);
-float green = random(0,255);
-float blue = random(0,255);
+float red = random(200,255);
+float green = random(0,100);
+float blue = random(0,100);
 background(red,green,blue);
 ```
 
@@ -600,10 +602,12 @@ background(red,green,blue);
 
 ???
 
+- This gives us a random background colour each time we run the program
+- And that random colour will be some kind of reddish colour because the random range for red gives a high number, while the random ranges for green and blue give lower numbers
 - You can even cut out the middle-person like this
 
 ```java
-background(random(0,255),random(0,255),random(0,255));
+background(random(200,255),random(0,100),random(0,100));
 ```
 
 - But that's significantly harder to read, I think you'll agree
