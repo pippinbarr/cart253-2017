@@ -369,6 +369,28 @@ int meaningOfLife = 42 + 42 / 2;
 
 ---
 
+# Space, man
+
+- Pay attention to spaces. A lot of the time they're not strictly necessary, but they make things a lot easier to read.
+- These two are equivalent:
+
+```java
+int meaningOfLife=(42+42)/2;
+```
+
+```java
+int meaningOfLife = (42 + 42) / 2;
+```
+
+- But the second one is easier to read, right?
+
+???
+
+- Note that you _cannot_ remove the space between `int` and `meaningOfLife` here because your program will break
+- Processing can no longer tell where the _type_ ends and the _variable name_ begins
+
+---
+
 class: middle
 
 # Variable names, again
@@ -622,12 +644,12 @@ class: middle
 - What would this do in the `draw()` loop of our avatar code?
 
 ```java
-avatarX = (int) random(0,width);
-avatarY = (int) random(0,height);
+avatarX = floor(random(0,width));
+avatarY = floor(random(0,height));
 ```
 
-- What is that `(int)` thing, you ask? It's called _casting_ - it turns the `float` you get from `random()` into the `int` that is meant to go into `avatarX` and `avatarY`
-- Generally let's avoid it, but we needed it here
+- What is `floor()`, you ask? It's a math function that turns a `float` into an `int` by removing everything after the floating point
+- So `4.5489549` becomes `4` and `145.1` becomes `145` etc.
 
 ???
 
@@ -650,8 +672,8 @@ void draw() {
   rect(avatarX + (avatarBodyWidth - avatarHeadSize)/2, avatarY - avatarHeadSize, avatarHeadSize, avatarHeadSize);
   rect(avatarX, avatarY + avatarBodyHeight, avatarLegWidth, avatarLegHeight);
   rect(avatarX + avatarBodyWidth - avatarLegWidth, avatarY + avatarBodyHeight, avatarLegWidth, avatarLegHeight);
-  avatarX = (int) random(0,width);
-  avatarY = (int) random(0,height);
+  avatarX = floor(random(0,width));
+  avatarY = floor(random(0,height));
 }
 ```
 
