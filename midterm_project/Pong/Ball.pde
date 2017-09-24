@@ -60,14 +60,28 @@ class Ball {
       // If it is, then make it "bounce" by reversing its velocity
       vy = -vy;
     }
-
-    // Check if the ball has gone off the left or right of the screen
-    if (x + SIZE/2 < 0 || x - SIZE/2 > width) {
-      // If it has, reset its position to the centre of the screen
-      // (Note that it will keep moving at its previous velocity)
-      x = width/2;
-      y = height/2;
-    }
+  }
+  
+  // reset()
+  //
+  // Resets the ball to the centre of the screen.
+  // Note that it KEEPS its velocity
+  
+  void reset() {
+    x = width/2;
+    y = height/2;
+  }
+  
+  // isOffScreen()
+  //
+  // Returns true if the ball is off the left or right side of the window
+  // otherwise false
+  // (If we wanted to return WHICH side it had gone off, we'd have to return
+  // something like an int (e.g. 0 = not off, 1 = off left, 2 = off right)
+  // or a String (e.g. "ON SCREEN", "OFF LEFT", "OFF RIGHT")
+  
+  boolean isOffScreen() {
+    return (x + SIZE/2 < 0 || x - SIZE/2 > width);
   }
 
   // collide(Paddle paddle)
