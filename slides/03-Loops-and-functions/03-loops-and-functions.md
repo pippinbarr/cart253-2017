@@ -1676,9 +1676,9 @@ void draw() {
 }
 
 color randomColour(int low, int high) {
-  float r = floor(random(low,high));
-  float g = floor(random(low,high));
-  float b = floor(random(low,high));
+  float r = random(low,high);
+  float g = random(low,high);
+  float b = random(low,high);
   return color(r,g,b);
 }
 ```
