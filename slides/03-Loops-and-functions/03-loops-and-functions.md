@@ -188,13 +188,33 @@ void draw() {
 ---
 
 class: middle
-background-image: url(images/song-that-doesnt-end.png)
-background-style: contain
 
-# The ultimate infinite loop
+_This is the song that doesn't end_  
+_Yes it goes on and on my friend_  
+_Some people started singing it, not knowing what it was_  
+_And they'll continue singing it forever, just because..._  
+_This is the song that doesn't end_  
+_Yes it goes on and on my friend_  
+_Some people started singing it, not knowing what it was_  
+_And they'll continue singing it forever, just because..._  
+_This is the song that doesn't end_  
+_Yes it goes on and on my friend_  
+_Some people started singing it, not knowing what it was_  
+_And they'll continue singing it forever, just because..._  
+_This is the song that doesn't end_  
+_Yes it goes on and on my friend_  
+_Some people started singing it, not knowing what it was_  
+_And they'll continue singing it forever, just because..._  
+_This is the song that doesn't end_  
+_Yes it goes on and on my friend_  
+_Some people started singing it, not knowing what it was_  
+_And they'll continue singing it forever, just because..._  
+_This is the song that doesn't end_  
+_Yes it goes on and on my friend_  
+_Some people started singing it, not knowing what it was_  
+_And they'll continue singing it forever, just because..._  
 
 ???
-
 
 - The song that doesn't end from Lamb Chop Play-ALong: https://www.youtube.com/watch?v=HNTxr2NJHa0
 
@@ -627,6 +647,8 @@ void draw() {
 
 - Here is some code to keep you company...
 - ... FOREVER!!
+- Although the `int` variable `counter` will also reach its maximum value of `2147483647`
+- Which will take about 414 days at 60fps
 
 ---
 
@@ -768,10 +790,7 @@ class: middle
 # Well, that worked, but...
 
 - As soon as we wanted to basically do the same thing twice our code started looking pretty stupid
-- We're so obviously doing _almost_ the same thing twice, shouldn't there just be a way to call
-
-`drawAvatar();`
-
+- We're so obviously doing _almost_ the same thing twice, shouldn't there just be a way to call `drawAvatar()`?
 - Well yes there is, __obviously__.
 
 ```java
@@ -857,6 +876,10 @@ void drawAvatar() {
 ```
 
 - It comes _after_ our `draw()` function
+
+???
+
+- This is a stylistic choice - you _can_ put the function _above_ where it is called, but people tend not to do that
 
 ---
 
@@ -1087,7 +1110,7 @@ void draw() {
   checkWinState();
 }
 
-// Actual definitions of those methods would be down here...
+// Actual definitions of those functions would be down here...
 ```
 
 - We can imagine programs where everything is in functions!
@@ -1114,7 +1137,7 @@ void draw() {
   checkWinState();
 }
 
-// Actual definitions of those methods would be down here...
+// Actual definitions of those functions would be down here...
 ```
 
 - We know where to look for specific kinds of problems now
@@ -1162,7 +1185,12 @@ class: middle
 
 - We can call `drawAvatar()` twice, and it works
 - But it draws the avatar in the _same place_ both times
---
+
+---
+
+class: middle
+
+# Information
 
 - Lots of functions only make sense if you can give them _information_
 - We don't get a rectangle if we just call `rect();` because it doesn't make sense
@@ -1206,6 +1234,7 @@ void drawAvatar(int x, int y, int size) {
 ```
 
 - It's exactly the same, but now we have something _inside the parentheses_
+- And the code in the function has changed a bit too
 
 ---
 
@@ -1329,8 +1358,8 @@ void drawAvatar(int x, int y, int size) {
 ```
 
 - Inside the _code_ of the function we can see that we are using the arguments just like variables
-- But it's weird now because the function doesn't know what values they have
-- Until the function gets _called_, that is
+- But it's different now because the function doesn't know what values they have
+- It has to wait until it is called and is given the information required
 
 ---
 
@@ -1517,7 +1546,7 @@ int tripleTheWidth(int w) {
 }
 ```
 
-- If, instead of `void` we write `int` we're saying "this function gives you back an integer"
+- If, instead of `void` we write .codeHighlight[`int`] we're saying "this function gives you back an integer"
 - So that bit in front of the function definition is the _return type_
 - It tells us the _kind of thing_ this function gives back
 - But this doesn't work... why?
@@ -1696,7 +1725,8 @@ class: middle
 - It's here!
 - We can take a look at it!
 - Note that it uses coding ideas we will learn __next week__ but which you can read about __now__
-- That is: object oriented programming (see chapter 8 of _Learning Processing_)
+- That is: object oriented programming (OOP) (see chapter 8 of _Learning Processing_)
+- Also note that [Exercise 02](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-02), assigned this week, uses a lot of the ideas in the Midterm, so you can play around with that while you're learning OOP
 
 ---
 
@@ -1723,9 +1753,9 @@ Also take note if you find some specific programming concept interesting (whethe
 
 class: middle
 
-# Homework
-- __Now:__ Finish [Exercise 01](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-01) if you haven't and make sure it is submitted (pushed to your repository online) and that you and your repository are listed on the [People](https://github.com/pippinbarr/cart253-2017/wiki/People) page.
-- __Now:__ If you're still having trouble with GitHub, talk to me or the TA for help!
+# Nowwork/Homework
+- __Finish [Exercise 01](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-01)__ if you haven't and make sure it is submitted (pushed to your repository online) and that you and your repository are listed on the [People](https://github.com/pippinbarr/cart253-2017/wiki/People) page.
+- If you're still having trouble with GitHub, talk to me or the TA for help!
 - [Exercise 02](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-02) is on the wiki and due next week
 - Look at and think about the [Midterm Project](https://github.com/pippinbarr/cart253-2017/wiki/Midterm-Project)
 - The readings from _this week_ are chapters 6 and 7 of _Learning Processing_ (loops and functions)
