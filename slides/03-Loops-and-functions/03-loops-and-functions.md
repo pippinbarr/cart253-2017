@@ -255,6 +255,7 @@ void draw() {
 - It kind of looks like the code from earlier and that it should draw squares between the left of the window and the mouse position
 - But there's a trap here, which is that `mouseX` will _never change_ because we don't ever repeat the `draw()` loop
 - `mouseX` will always be `0`, and so the `while` condition will always be `true`
+- __Note:__ On Windows and on Linux (at least in Processing 3.3.5 and 3.3.6) it _will render_ the squares in the first frame, whereas on a Mac it will not (at least in Processing 3.3.5 and 3.3.6)
 
 ---
 
