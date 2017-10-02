@@ -8,18 +8,26 @@ class: middle
 
 # Any questions about [Exercise 02](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-02)?
 
+- `namingVariables` `shouldBeIn` `camelCase`
+  - (I regret putting in `final` in the first assignment. I apologise.)
+  - It's conventional to write variables that never change in `ALL_CAPITALS_LIKE_THIS`. They're called _constants_.)
+- In the function `void mousePressed() { }` you don't need to check `if (mousePressed)` because it's guaranteed to be true
+- Some "commitment issues" but that was to be expected for the first time through. From now on we'll expect to see the correct sequence of commits as per the steps in the exercise (you can have more, but the ones specifically requested in the exercise are required)
+
+---
+
 ```java
 void handleBallHitWall() {
-  if (ballX - ballSize/2 < 0) {
-    ballX = 0 + ballSize/2;
+  if (ballX - ballSize/2 < 0) { // WHAAAAT?
+    ballX = 0 + ballSize/2; // SAY WHAT?
     ballVX = -ballVX;
-  } else if (ballX + ballSize/2 > width) {
-    ballX = width - ballSize/2;
+  } else if (ballX + ballSize/2 > width) { // WHAT THE?
+    ballX = width - ballSize/2; // UUHHHHH...
     ballVX = -ballVX;
   }
 
-  if (ballY - ballSize/2 < 0) {
-    ballY = 0 + ballSize/2;
+  if (ballY - ballSize/2 < 0) { // HUH?
+    ballY = 0 + ballSize/2; // BUT WHY?
     ballVY = -ballVY;
   }
 }
