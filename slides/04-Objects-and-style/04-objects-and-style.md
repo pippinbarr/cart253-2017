@@ -153,6 +153,12 @@ void setup() {
 - This would be a new _type_ of thing, so we'd have a _variable_ of _type_ Ball
 - But... how do we make it?
 
+???
+
+__Note:__ Calling our _type_ Ball and our variable _ball_ shows us the important different between type (aka. class) names and variable names. When we do OOP the new types of things we make have a capital letter, but the variable will have a lowercase letter.
+
+It's a bit like `int number;` in a way. The variable is named after the type.
+
 ---
 
 # Let there be Ball!
@@ -311,6 +317,8 @@ This is what a _class_ definition looks like.
 - And we paste in our class definition in the new tab
 - And Processing now knows what a Ball is
 - ... admittedly, though, it doesn't _do_ anything
+
+__Note:__ The ball _does exist_, it just has no representation on the screen and doesn't do anything!
 
 ---
 

@@ -65,6 +65,10 @@ rect(5*boardWidth,height-boardHeight,boardWidth,boardHeight);
 --
 And then you die of boredom.
 
+???
+
+__Note:__ We use `height-boardHeight` as the y coordinate of each board to make it align with the bottom of the screen. If we drew it at `height` its top-left corner would be at the bottom (and we wouldn't see it), so we subtract `boardHeight` to draw it perfectly aligned.
+
 ---
 
 class: middle
@@ -242,7 +246,7 @@ class: middle
 ```java
 void draw() {
   int x = 0;
-  while (mouseX < width) {
+  while (mouseX < 50) {
     rect(x,mouseY,10,10);
     x += 20;
   }
