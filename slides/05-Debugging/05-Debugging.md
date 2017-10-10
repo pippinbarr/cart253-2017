@@ -447,41 +447,6 @@ void draw() {
 
 ---
 
-# Show it
-
-- You're surrounded by people who know how to program
-- If you're totally stuck on a weird bug, show it to someone else
-- The process of _explaining_ what is going wrong will often trigger a realisation of how to fix it!
-- This also can work if you just verbally explain your code _to yourself_
-
----
-
-# Take a break
-
-- You have probably experienced the obsession of trying to fix a bug for multiple hours with no luck
-- It's very tempting and easy to just keep going at it
-- But you can end up totally exhausted and not able to think straight
-- Taking a break, even a short one, is often a great way to suddenly come up with the answer
-
----
-
-# Bonus: Ask for help
-
-- It is a great instinct to want to work through all the problems in your code on your own, you'll learn a lot
-- But it's important, too, to remember that we're here to _learn_ how to program, not to already be good at it
-- So if you're struggling for what feels like too long, just ask for help with it
-- There is studio time, office hours, email, many ways to reach out
-
----
-
-# Let's do this
-
-- I broke the crap out of Pong
-- Let's fix it!
-- Together!
-
----
-
 `Ball.pde`
 ```java
 void reset() {
@@ -515,6 +480,53 @@ boolean isOffScreen() {
 ???
 
 - __Note__ how you can use `+` to add values to your String in `println()`
+
+---
+
+# Show it
+
+- You're surrounded by people who know how to program
+- If you're totally stuck on a weird bug, show it to someone else
+- The process of _explaining_ what is going wrong will often trigger a realisation of how to fix it!
+- This also can work if you just verbally explain your code _to yourself_
+
+---
+
+# Take a break
+
+- You have probably experienced the obsession of trying to fix a bug for multiple hours with no luck
+- It's very tempting and easy to just keep going at it
+- But you can end up totally exhausted and not able to think straight
+- Taking a break, even a short one, is often a great way to suddenly come up with the answer
+
+---
+
+# Bonus: Ask for help
+
+- It is a great instinct to want to work through all the problems in your code on your own, you'll learn a lot
+- But it's important, too, to remember that we're here to _learn_ how to program, not to already be good at it
+- So if you're struggling for what feels like too long, just ask for help with it
+- There is studio time, office hours, email, many ways to reach out
+
+---
+
+# Bonus: Call it a feature!
+
+- One of the dark arts of programming is to sometimes decide that an element of your program that doesn't work the way you want is actually... _what you wanted_
+- This is only a good idea if you _understand_ why it doesn't work
+- But it can be an interesting design process to consider: not all unexpected behaviour in your code is necessarily bad
+- So long as you (eventually) understand it
+
+---
+
+# Let's do this
+
+- I broke the crap out of Pong
+- Let's fix it!
+- Together!
+- [Working Pong Example Code](https://github.com/pippinbarr/cart253-2017/tree/master/examples/05-Debugging/PongNoBugs.zip)
+- [Broken Pong Example Code](https://github.com/pippinbarr/cart253-2017/tree/master/examples/05-Debugging/PongBugs.zip)
+
 
 ---
 
