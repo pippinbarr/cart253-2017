@@ -76,8 +76,6 @@ class: middle
 
 ---
 
-
-
 # Objection!
 
 - So what are the "objects" in OOP?
@@ -91,7 +89,12 @@ class: middle
 
 ---
 
+# Other people's objects
 
+- In fact, objects are also amazing because _other people_ can define them _for_ us to save us work (e.g. `PImage`)
+- In fact, that's how _libraries_ in programming most often work
+
+---
 
 # "O Brave New World!"<sup>1</sup>
 
@@ -544,6 +547,52 @@ class Ball {
 }
 ```
 
+???
+
+- Note that when we spoke about this we actually implemented our `Ball` to use a `PImage` as its representation
+
+```java
+class Ball {
+  PImage image;
+  int x;
+  int y;
+  int vx;
+  int vy;
+
+  Ball() {
+    x = width/2;
+    y = height/2;
+    vx = 10;
+    vy = 10;
+    image = loadImage("images/ball.png");
+  }
+
+  void update() {
+    x += vx;
+    y += vy;
+
+    // NOTE that a PImage has the properties "width" and "height"
+    // that store that actual width and height of the image we
+    // loaded. That means we can check for bouncing based on
+    // those properties so that any size image will work!
+    if (x - image.width/2 < 0 || x + image.width/2 > width) {
+      vx = -vx;
+    }
+    if (y - image.height/2 < 0 || y + image.height/2 > height) {
+      vy = -vy;
+    }
+
+    x = constrain(x, image.width/2, width - image.width/2);
+    y = constrain(y, image.height/2, height - image.height/2);
+  }
+
+  void display() {
+    imageMode(CENTER);
+    image(image, x, y);
+  }
+}
+```
+
 ---
 
 # Multiball action!
@@ -729,11 +778,12 @@ background-style: contain
 # Commenting
 
 - The Pong code template for the midterm is commented thoroughly but not excessively
-- Every file should have an _introduction_ at the top that explains it
-- Every _function_ and _method_ should have an _explanation_
-- Any _potentially confusing/difficult line_ should have an _explanation_
+- Every file should have an _introduction at the top_ that explains it
+- Every _function_ and _method_ should have an _explanation_ above it
+- Any _potentially confusing/difficult line_ should have an _explanation_ above it
 - Comments should be written in _plain language_
 - They should _not_ just restate exactly what the code does
+- Comments should be _above_ the aspect they are describing
 
 ---
 
