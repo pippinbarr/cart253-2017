@@ -17,6 +17,7 @@ class: middle
 
 - Vocabulary: _declare_, _initialise_, _instantiate_
 - "Clicked" versus "clicked in"
+- Checking for mouse events in classes
 
 ---
 
@@ -122,6 +123,68 @@ class Button {
   }
 }
 ```
+
+---
+
+### Checking for mouse events in classes
+
+- When we want an object to know whether the mouse was pressed, it might be tempting to just check the global variable `mousePressed` like this:
+
+```java
+class Bouncer {
+  ...
+  void update() {
+    checkMouse();
+  }
+  ...
+  void mousePressed() {
+    if (mousePressed) {
+      // Do something
+    }
+  }
+...
+}
+```
+
+---
+
+### Checking for mouse events in classes
+
+- BUT it is better (and more standard) practice to do this by giving the class a _method_ that is called when the mouse is pressed like this:
+
+```java
+class Bouncer {
+  ...
+  void mousePressed() {
+    // Do something
+  }
+...
+}
+```
+
+---
+
+### Check for mouse events in class
+
+- And then _calling_ that method from the main program, which is the part of the program designed to _receive_ mouse events
+
+```java
+Bouncer myBouncer;
+
+void setup() {
+  my Bouncer = new Bouncer();
+}
+
+void draw() {
+  ...
+}
+
+void mousePressed() {
+  myBouncer.mousePressed();
+}
+```
+
+- It's subtle, but worth remembering
 
 ---
 
