@@ -70,7 +70,15 @@ int meaningOfLife = 42
 int meaningOfDeath = 0;
 ```
 
+Underlined in red:
+
 __Missing a semicolon ";"__
+
+If you try to run the program:
+
+__unexpected token: int__
+
+__
 
 ---
 
@@ -338,6 +346,17 @@ Not super helpful. But at least it's an error.
 - But its warnings aren't always totally clear
 - Need to practice and come to understand the kinds of things that can be going wrong
 - Once you have that list in your head, it's a lot easier to fix them
+
+---
+
+# The "Errors" tab
+
+- At the bottom of the Processing window there are two tabs: "Console" and "Errors"
+- We usually look at "Console" when we work
+- But if you're debugging it can be helpful to look at the "Errors" tab, too
+- It provides a list of all the errors Processing can find in your code
+- That can be useful when it can list a whole lot at once so you can fix them
+- If you double-click on a listed error, it will jump to the line in your code
 
 ---
 

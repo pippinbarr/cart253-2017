@@ -52,7 +52,7 @@ class Ball {
   int x; // Declaring a property (a variable that lives inside a class)
   int y; // Declaring another property
 
-  Ball(int tempX, tempY) {
+  Ball(int tempX, int tempY) {
     x = tempX; // Initialising the property x
     y = tempY; // Initialising the property y
   }
@@ -137,7 +137,7 @@ class Bouncer {
     checkMouse();
   }
   ...
-  void mousePressed() {
+  void checkMouse() {
     if (mousePressed) {
       // Do something
     }
@@ -717,7 +717,7 @@ for (int i = 0; i < bouncers.length; i++) {
 void draw() {
   for (int i = 0; i < bouncers.length; i++) {
     bouncers[i].update();
-    bouncers[i].display();
+    bouncers[i].draw();
   }
 }
 ```
