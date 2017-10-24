@@ -559,7 +559,7 @@ float rightAngleInDegrees = degrees(rightAngleInRadians);
 # Better keep it oscillated
 
 - A great feature of trigonometric functions is _oscillation_
-- Functions like _sine_ and _cosine_ oscillate between `0` and `1` as the angle you give them changes
+- Functions like _sine_ and _cosine_ oscillate between `-1` and `1` as the angle you give them changes
 
 ```java
 float theta = 0;
