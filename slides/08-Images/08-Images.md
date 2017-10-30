@@ -570,21 +570,67 @@ for ( int x = 1; x < source.width; x++ ) {
 
 ---
 
+# Libraries
+
+- In programming, it would be a huge pain if we always had to write everything from the ground up
+- There are lots of tasks that _lots_ of people want to be able to do
+- So it would be great if they were solved _once_ and then _shared_
+--
+
+- That's what _libraries_ are
+- A library is a set of code that provides you with code so you don't have to write it
+- Like a game engine, or an artificial intelligence algorithm, or 2D physics
+- Or using the webcam!
+
+---
+
 # The video library
 
-- The first thing we need at the top of our program is to import Processing's video library, like this:
+- There is a library available for Processing that allows us to work with video and the webcam
+- It's called "video", which is pretty sensible
+- A library is just a set of files that define the code that library provides for us
+- So the video library provides a bunch of code for dealing with video and webcams
+- Because who wants to write that themselves, after all?
+- Nobody!
+--
+ Except the person who wrote the video library!
+
+---
+
+# Installing the video library
+
+- In Processing if we go to `Sketch > Import Library...` and we can see Video listed, then we know the library is already installed
+- If _not_, we go to `Sketch > Import Library... > Add Library...` to bring up Processing's interface for downloading libraries
+- From there we can scroll or search for "Video" and click `Install`
+--
+
+- You may have noticed there are a bunch of other libraries listed!
+- You could use those!
+
+---
+
+# Using libraries in general
+
+1. _Install_ it as we did with the video library
+2. Find its _documentation_ online either with a search like "processing video library" _or_ by going to the [Processing Reference's Libraries section](http://www.processing.org/references/libraries) and looking for it there
+3. _Read the introduction_ to the documentation so you understand what the library is for
+4. Click on a _method or object_ you're interested in and read about that
+5. Copy some _example code_ and run it in Processing
+6. Start coming up with your own ideas
+
+---
+
+# `import`ing the video library
+
+- To tell Processing we want to use a library, we have to `import` it at the top of our program
+- In the case of the video library, we need to write
 
 ```java
 import processing.video.*;
 ```
 
-- This is the world of libraries
-- In brief, libraries provide you with the ability to use all kinds of code you couldn't have written yourself!
-- Like code to access the data from your webcam!
-- Who wants to write that themselves, after all?
-- Nobody!
---
- Except the person who wrote the video library!
+- _Or_ we can go up to `Sketch > Import Library...` and select "Video" from the list (now that we have installed it)
+- That will write the appropriate `import` at the _top_ of our code (we always `import` at the top of the main program)
 
 ---
 
@@ -592,6 +638,7 @@ import processing.video.*;
 
 - To access the information the video library makes available we use a `Capture` object
 - This is a common way that we use libraries - they provide a specific `class` that we can make an object from to access the library's abilities
+- Because a `class` is a great way to keep a whole lot of methods and properties together safely
 - So we need to declare a `Capture` variable like this
 
 ```java
