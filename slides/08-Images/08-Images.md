@@ -45,6 +45,12 @@ y += size * yMoveType;
 
 ---
 
+# Just for fun, another kind of movement
+
+See [Example of Movement with Speed and Rotation](https://github.com/pippinbarr/cart253-2017/tree/master/examples/movement_with_speed_and_rotation) in the `examples/` folder of the class Code repository
+
+---
+
 class: middle
 
 # Images
