@@ -187,6 +187,7 @@ void mouseClicked() {
 # `.pixels[]`
 
 - We can get access to a `PImage`'s pixels by asking for its `pixels` array
+- This `pixels` array is _built into `PImage`_ so it's there automatically
 
 ```java
 PImage myImage;

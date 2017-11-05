@@ -19,6 +19,15 @@ class: middle
 
 ---
 
+# Libraries in sketch folders?
+
+- Last week I promised to check on whether you can keep a library somewhere that CDA won't delete it
+- The answer is you _can't_ keep it in your sketch folder (because libraries are huge for one thing)
+- The other answer is you _can_ change Processing's "Sketchbook Location" preference, which is where there libraries folder ends up
+- _But_ you might then find _that_ setting gets deleted too - it may be more trouble than it's worth?
+
+---
+
 class: middle
 
 # Sound
