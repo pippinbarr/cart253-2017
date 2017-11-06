@@ -154,8 +154,8 @@ void mouseClicked() {
 
 - If you desperately want to `loop()` stereo files then you have two key options
 
-- _Option one_: Use _mono_ files so that `loop()` works
-- _Option two_: Use the _Minim_ audio library instead
+0. Use _mono_ files so that `loop()` works
+0. Use the _Minim_ audio library instead
 
 - The Minim library is very similar to the Sound library but is more sophisticated
 - If you're really into audio, it might be more fun to play around with
@@ -584,7 +584,6 @@ class: middle
 - Most obviously it can export _applications_ for Mac OS X, Windows, and Linux by selecting `File > Export Application...` (though if you embed Java this leads to _huge_ file sizes)
 - Less obviously there are opportunities to export to PDF, images, and image sequences (which could be stitched back into a movie), and the book covers these
 - Helpfully, there is also a JavaScript library called Processing.js that allows us to run Processing code in the browser via JavaScript
-- It works really well for simple cases!
 
 ---
 
@@ -617,5 +616,5 @@ class: middle
 
 - __Now:__ Finish [Exercise 06](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-06)
 - __Nowish:__ Start [Exercise 07](https://github.com/pippinbarr/cart253-2017/wiki/Exercise-07), due next week
-- The readings for _next week_ are Chapters 20 and 21 of _Learning Processing_ (Sound and Exporting)
+- The reading for _next week_ is Chapter 17 of _Learning Processing_ (Text)
 - The readings for _this week_ were Chapters 20 and 21 of _Learning Processing_ (Sound and Exporting)
