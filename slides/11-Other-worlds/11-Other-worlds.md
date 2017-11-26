@@ -104,7 +104,7 @@ var bouncers = [];
 function setup() {
   createCanvas(480,480);
 	for (var i = 0; i < numBouncers; i++) {
-		var b = new Bouncer(width/2,height/2,10 - Math.random()*20,10 - Math.random()*20);
+		var b = new Bouncer(width/2,height/2,10 - random(20),10 - random(20));
 		bouncers.push(b);
 	}
 }

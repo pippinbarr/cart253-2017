@@ -22,8 +22,7 @@ class Letter {
   // Creates the obvious properties, constructs the size
   // of the character based on its properties derived from
   // the current font.
-  Letter(char tempC) 
-  {
+  Letter(char tempC) {
     c = tempC;
 
     x = 0;
@@ -43,8 +42,7 @@ class Letter {
   //
   // Checks whether the mouse is over the character and moves
   // the character based on where the mouse was in the previous frame.
-  public void update() 
-  {    
+  void update() {    
     // Check if the mouse is pressed while "inside" the character's space
     if (mousePressed) {
       if ((mouseX > x && mouseX < x + w) && (mouseY < y && mouseY > y - h)) {
@@ -68,8 +66,7 @@ class Letter {
   // display()
   //
   // Sorry this isn't a bit more riveting.
-  public void display() 
-  {
+  void display() {
     text(c, x, y);
   }
 
@@ -78,8 +75,7 @@ class Letter {
   //
   // A setter for setting the position of the letter.
   // A Letter Setter.
-  public void setPosition(float tempX, float tempY)
-  {
+  void setPosition(float tempX, float tempY) {
     x = tempX;
     y = tempY;
   }

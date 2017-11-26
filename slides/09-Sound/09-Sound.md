@@ -217,6 +217,8 @@ void mouseClicked() {
 }
 ```
 
+- It's okay to ignore those errors like "ERROR: /node/free: Cannot free root node 0"
+
 ---
 
 # Other playback fun

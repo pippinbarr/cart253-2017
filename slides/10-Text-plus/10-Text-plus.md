@@ -111,6 +111,19 @@ println(fourthChar); // Which is 'p'
 
 ---
 
+# Characters in numbered places
+
+- Along with `charAt()` we can also get a "substring" from a String using `substring()`
+- That allows us to get a part of the String between specific positions
+
+```java
+String myString = "My name is Earl.";
+String name = myString.substring(11,15);
+println(name); // Which is 'Earl'
+```
+
+---
+
 # Changing `String`s
 
 - There are methods for changing the representation of a String such as
@@ -124,7 +137,9 @@ println(myLowerString);
 println(myString);
 ```
 
-- Notice that `myString` _isn't changed_ by those methods - they return a _new_ `String` with the changes applied to it
+- Notice that `myString` _isn't changed_ by those methods
+- they return a _new_ `String` with the changes applied to it
+- `String`s are _immutable_ you have to put the result into a new `String`
 
 ---
 
@@ -222,10 +237,10 @@ text("Say it\nlike you\nmean it.",width/2,height/2); // Note that \n means "new 
 - Using `createFont()` that way won't work if the person using your program doesn't have the specific font installed
 - So another way is to specifically create a font file in Processing
 - You go to `Tools > Create Font...`
-- You choose your font and settings
-- You hit okay
+- You choose your font and settings then hit okay
 - And you have a `.vlw` file in your `data` directory containing that font
-- Now you can use `loadFont()` to load that file and use that font...
+  - (VLW stands for Visual Language Workshop. Developed at the MIT Lab in the mid 90s.It stores each alphanumeric characters as a grid of pixels.)
+- Now you can use `loadFont()` to load that file and use it...
 
 ---
 
