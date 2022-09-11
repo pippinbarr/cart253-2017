@@ -4,7 +4,7 @@ int endY;
 void setup() {
   size(200, 200);
   frameRate(5);
-  endY = 10;
+  endY = 1;
 }
 
 void draw() {
