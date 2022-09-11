@@ -16,7 +16,7 @@ for (float i = 1.0; i < width; i *= 1.1) {
 }
 ```
 
-### C
+### D
 
 ```java
 for (int i = 0; i < 10; i++) {
@@ -24,7 +24,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-### D
+### C
 
 ```java
 int x = 0;
